@@ -53,3 +53,9 @@ appending the stream key as an element to the path.  So, to add the HDMI feed,
 a Media Source could be added to stream from `rtmp://localhost/stream/hdmi`
 (assuming the above configuration of using `rtmp://localhost/stream` with the
 stream key being `hdmi`).
+
+### Automating startup
+For Linux users, a convenience script is provided at `gen-desktop.rb`, which
+will generate a shell script appropriate for a given user's setup and a
+`.desktop` file which can be used to avoid having to use the terminal to start
+up the docker container and obs instances.
